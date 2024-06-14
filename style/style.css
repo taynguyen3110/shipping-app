@@ -1,0 +1,450 @@
+html,
+body {
+    min-height: 100%;
+    background: rgb(252, 250, 250);
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body,
+div,
+form,
+input,
+select,
+textarea,
+p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+h1 {
+    position: absolute;
+    margin: 0;
+    line-height: 35px;
+    font-size: 35px;
+    color: #d5f1ff;
+    z-index: 2;
+    text-shadow: 0px 1px 25px black;
+}
+
+.testbox {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 25px 0 #d6e0f5;
+}
+
+.banner {
+    position: relative;
+    height: 300px;
+    background-image: url("/WAD/Project1/img/rocket-ship.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+}
+
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+
+.item input:hover,
+.item select:hover,
+.item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0 #0087cc;
+    color: #004468;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item i {
+    right: 2%;
+    top: 28px;
+    z-index: 1;
+}
+
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-block input {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0087cc;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: grey;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: rgb(71, 71, 71);
+    background: rgb(221, 221, 221);
+    transition: all 0.3s linear;
+}
+
+.btn-block input:hover {
+    background: #6eb8dd;
+    transition: all 0.3s linear;
+}
+
+/* #login-btn {
+    display: none;
+} */
+
+#title-table {
+    text-align: center;
+}
+
+#data-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+#data-table td,
+#data-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    white-space: nowrap;
+    width: 10%;
+}
+
+#data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#data-table tr:hover {
+    background-color: #ddd;
+}
+
+#data-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #279fdb;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#message {
+    /* style for success msg */
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    background-color: #2ecc71;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+
+#message p {
+    /* style for err msg */
+    background-color: #ffeeee;
+    padding: 3px;
+    color: red;
+}
+
+/* Variable values */
+:root {
+    --radius: 7px;
+    --skew: 25deg;
+    --main-color: #0087CC;
+}
+
+/* Styling for the menu container */
+.skew-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the unordered list inside the menu container */
+.skew-menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transform: skew(-25deg);
+}
+
+/* Styling for the list items inside the unordered list */
+.skew-menu ul li {
+    background: #fff;
+    float: left;
+    border-right: 1px solid #eee;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    /* text-transform: uppercase; */
+    color: #555;
+    font-weight: bolder;
+    transition: all 0.3s linear;
+}
+
+/* Styling for the first and last menu items */
+.skew-menu ul li:first-child {
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.skew-menu ul li:last-child {
+    border-right: none;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Hover effect for menu items */
+.skew-menu ul li:hover {
+    background: #eee;
+    color: var(--main-color);
+}
+
+/* Styling for the anchor tags within the menu items */
+.skew-menu ul li a {
+    display: block;
+    padding: 1em 2em;
+    color: inherit;
+    text-decoration: none;
+    transform: skew(var(--skew));
+}
+
+.skew-menu .active {
+    background: #eee;
+    color: var(--main-color);
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+td {
+    padding: 8px;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+}
+
+.my-button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #0087CC;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.item-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.item-cell {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.add-button {
+    background-color: #0087CC;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 30px;
+}
+
+.process-button {
+    background-color: #0087CC;
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 7px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.out-of-stock-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffd0d0;
+    text-align: center;
+}
+
+/* Apply styles to the entire cart table */
+#cartTable {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+#cart {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+/* Style for table header */
+#cartTable th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for alternating rows */
+#cartTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table cells */
+#cartTable td {
+    padding: 5px;
+}
+
+/* Add a border to cells */
+#cartTable th,
+#cartTable td {
+    border: 1px solid #ccc;
+}
+
+/* Apply some spacing to the table */
+#cartTable {
+    margin-top: 15px;
+}
+
+/* Style for buttons in the cart table */
+#cartTable .remove-button,
+#cartTable .confirm-button,
+#cartTable .cancel-button {
+    background-color: #ff8181;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#cartTable a:hover {
+    color: rgb(71, 71, 71);
+    background: rgb(221, 221, 221);
+    transition: all 0.3s linear;
+}
+
+#cartTable .confirm-button {
+    background-color: #00cc55;
+    padding: 10px 20px;
+}
+
+#cartTable .cancel-button {
+    background-color: #555555;
+    padding: 10px 20px;
+}
+
+/* Style for totals row */
+#cartTable .totals-row {
+    font-weight: bold;
+}

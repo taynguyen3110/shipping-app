@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ship Online" />
+    <meta name="keywords" content="HTML5, PHP" />
+    <meta name="author" content="Nguyen Hong Tay" />
+    <link href="style/style.css" rel="stylesheet" />
+    <script src="script/xhr.js"></script>
+    <script src="script/protectHTM.js"></script>
+    <script src="script/login.js"></script>
+    <!-- <script src="script/protectHTM.js"></script> -->
+    <title>ShipOnline System</title>
+
+</head>
+
+<body>
+    <div class="testbox">
+        <nav class="skew-menu">
+            <ul>
+                <li><a href="buyonline.htm">Home</a></li>
+                <li><a href="register.htm">Customer Registration</a></li>
+                <li class="active"><a href="login.htm">Customer Login</a></li>
+                <li><a href="mlogin.htm">Store Manager Login</a></li>
+            </ul>
+        </nav>
+        <!-- Login form -->
+        <form>
+            <div class="banner">
+                <h1>BuyOnline Customer Login Page</h1>
+            </div>
+            <h4>For testing, ID: tom123@a.com, password: 1234</h4>
+            <div class="item">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div class="item">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+            </div>
+            <div class="btn-block">
+                <input type="button" onclick="customerLogin()" value="Login">
+            </div>
+        </form>
+        <div class="item">
+            <a href="buyonline.htm"><button>Home</button></a>
+            <div id="message"></div>
+        </div>
+    </div>
+</body>
+
+</html>

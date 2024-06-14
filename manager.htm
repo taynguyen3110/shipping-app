@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ship Online" />
+    <meta name="keywords" content="HTML5, PHP" />
+    <meta name="author" content="Nguyen Hong Tay" />
+    <link href="style/style.css" rel="stylesheet" />
+    <script src="script/xhr.js"></script>
+    <script src="script/protectHTM.js"></script>
+    <title>ShipOnline System</title>
+
+</head>
+
+<body>
+    <div class="testbox">
+        <nav class="skew-menu">
+            <ul>
+                <li><a href="buyonline.htm">Home</a></li>
+                <li><a href="listing.htm">Listing</a></li>
+                <li><a href="processing.htm">Processing</a></li>
+                <!-- <li><a href="logout.htm">Logout</a></li> -->
+                <li><a onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+        <form>
+            <div class="banner">
+                <h1>ShipOnline System Request Page</h1>
+            </div>
+            <h3 id="welcome" style="margin-top: 30px;"></h3>
+            <script>
+                var sessionId = sessionStorage.getItem("id");
+                if (sessionId) {
+                    var welcomeMessage = document.getElementById("welcome").textContent = "Welcome " + sessionId + "!";
+                }
+            </script>
+        </form>
+        <div class="item">
+            <div id="message"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<goods>
+  <item>
+    <id>3</id>
+    <name>Tablet 1</name>
+    <price>900</price>
+    <hold_quantity>12</hold_quantity>
+    <sold_quantity>15</sold_quantity>
+    <quantity>60</quantity>
+    <description>Feature-rich tablets</description>
+  </item>
+  <item>
+    <id>4</id>
+    <name>Laptop 1</name>
+    <price>2000</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>3</sold_quantity>
+    <quantity>50</quantity>
+    <description>Premium laptops</description>
+  </item>
+  <item>
+    <id>5</id>
+    <name>Camera 1</name>
+    <price>800</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>5</sold_quantity>
+    <quantity>120</quantity>
+    <description>High-performance cameras</description>
+  </item>
+  <item>
+    <id>6</id>
+    <name>Smartwatch 1</name>
+    <price>300</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>2</sold_quantity>
+    <quantity>30</quantity>
+    <description>Stay connected with style</description>
+  </item>
+  <item>
+    <id>7</id>
+    <name>Speaker 1</name>
+    <price>100</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>2</sold_quantity>
+    <quantity>200</quantity>
+    <description>Immersive audio experience</description>
+  </item>
+  <item>
+    <id>8</id>
+    <name>Headphones 1</name>
+    <price>150</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>3</sold_quantity>
+    <quantity>100</quantity>
+    <description>Crystal clear sound</description>
+  </item>
+  <item>
+    <id>9</id>
+    <name>Monitor 1</name>
+    <price>250</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>5</sold_quantity>
+    <quantity>40</quantity>
+    <description>Enhance your workspace</description>
+  </item>
+  <item>
+    <id>10</id>
+    <name>Keyboard 1</name>
+    <price>50</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>2</sold_quantity>
+    <quantity>150</quantity>
+    <description>Effortless typing</description>
+  </item>
+  <item>
+    <id>11</id>
+    <name>Tablet apple</name>
+    <price>300</price>
+    <hold_quantity>0</hold_quantity>
+    <sold_quantity>2</sold_quantity>
+    <quantity>20</quantity>
+    <description>best tablet in aussie</description>
+  </item>
+</goods>
